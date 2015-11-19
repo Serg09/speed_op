@@ -19,6 +19,7 @@ gem 'resque', require: 'resque/server'
 gem 'rails', '4.2.4'
 
 group :production do
+  gem 'pg'
   gem 'rails_12factor'
 end
 
@@ -58,6 +59,7 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'capybara'
   gem 'faker'
+  gem 'sqlite3'
   gem 'shoulda-matchers'
   gem 'quiet_assets'
   gem 'launchy'
