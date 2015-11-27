@@ -38,6 +38,8 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem 'sendgrid-rails', '~> 2.0'
 
+gem 'rspec-collection_matchers'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
@@ -57,6 +59,7 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'quiet_assets'
   gem 'launchy'
+  gem 'letter_opener'
 end
 
 group :development do

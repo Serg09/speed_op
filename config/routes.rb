@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  default_url_options host: 'localhost', port: 3000
+
   resources :sites
 
   root "sites#index"
@@ -11,6 +13,8 @@ Rails.application.routes.draw do
   resources :users,
     only: [:new, :create],
     path_names: { new: "signup" }
+
+  get 'verification/:token', to: 'users#verify', as: 'verify_email'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -15,4 +15,18 @@ class User < ActiveRecord::Base
 
   validates_length_of :password, minimum: 8
 
+
+  def needs_verification!
+    self.update_attributes!(
+      token: SecureRandom.urlsafe_base64,
+      verified_email: false
+    )
+    UserNotifier.signed_up(self).deliver_now
+  end
+
+# Remembers a user in the database for use in persistent sessions.
+  def remember
+    self.remember_token = User.new_token
+    update_attribute(:remember_digest, User.digest(remember_token))
+  end
 end
