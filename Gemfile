@@ -38,6 +38,7 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem 'mail_form'
 gem 'simple_form'
+gem 'sendgrid-rails', '~> 2.0'
 
 # Use Unicorn as the app server
 # gem 'unicorn'

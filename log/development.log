@@ -2600,3 +2600,713 @@ Started GET "/contacts" for ::1 at 2015-11-27 17:57:41 -0700
 Processing by ContactsController#new as HTML
   Rendered contacts/new.html.erb within layouts/application (7.8ms)
 Completed 200 OK in 111ms (Views: 111.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2015-11-27 22:06:20 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bwcNY6Bkm0TXRbiKAl9dV6bGdM+tGxFSQQoEkl4h+AVETfBcA7ok4zvNUU5Vqe5zXooqQRIesExOC41uJSOcEg==", "contact"=>{"name"=>"Serg", "email"=>"speedopdavinci@gmail.com", "message"=>"test", "nickname"=>""}, "commit"=>"Send message"}
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@speed_op/gems/mail_form-1.5.1/lib/mail_form/views/mail_form/contact.erb (283.6ms)
+
+MailForm::Notifier#contact: processed outbound mail in 479.8ms
+
+Sent mail to noreply@example.com (30013.6ms)
+Date: Fri, 27 Nov 2015 22:06:21 -0700
+From: Serg <speedopdavinci@gmail.com>
+To: noreply@example.com
+Message-ID: <5659364d57e72_7f493fd1184589a854016@Violettas-MacBook-Pro.local.mail>
+Subject: My Contact Form
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+X-SMTPAPI: {"to":[ "speedopdavinci@gmail.com" ]}
+
+<h4 style="text-decoration:underline">My Contact Form</h4>
+
+
+  <p><b>Name:</b>
+  Serg</p>
+
+  <p><b>Email:</b>
+  speedopdavinci@gmail.com</p>
+
+  <p><b>Message:</b>
+  test</p>
+
+
+  Rendered contacts/create.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 30870ms (Views: 338.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2015-11-27 22:06:51 -0700
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bwcNY6Bkm0TXRbiKAl9dV6bGdM+tGxFSQQoEkl4h+AVETfBcA7ok4zvNUU5Vqe5zXooqQRIesExOC41uJSOcEg==", "contact"=>{"name"=>"Serg", "email"=>"speedopdavinci@gmail.com", "message"=>"test", "nickname"=>""}, "commit"=>"Send message"}
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@speed_op/gems/mail_form-1.5.1/lib/mail_form/views/mail_form/contact.erb (0.4ms)
+
+MailForm::Notifier#contact: processed outbound mail in 26.3ms
+
+Sent mail to noreply@example.com (30005.0ms)
+Date: Fri, 27 Nov 2015 22:06:51 -0700
+From: Serg <speedopdavinci@gmail.com>
+To: noreply@example.com
+Message-ID: <5659366bb5ae0_7f493fd115fea7105414c@Violettas-MacBook-Pro.local.mail>
+Subject: My Contact Form
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+X-SMTPAPI: {"to":[ "speedopdavinci@gmail.com" ]}
+
+<h4 style="text-decoration:underline">My Contact Form</h4>
+
+
+  <p><b>Name:</b>
+  Serg</p>
+
+  <p><b>Email:</b>
+  speedopdavinci@gmail.com</p>
+
+  <p><b>Message:</b>
+  test</p>
+
+
+  Rendered contacts/create.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 30203ms (Views: 168.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for ::1 at 2015-11-27 22:08:40 -0700
+Processing by ContactsController#new as HTML
+  Rendered contacts/new.html.erb within layouts/application (74.2ms)
+Completed 200 OK in 237ms (Views: 234.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2015-11-27 22:10:20 -0700
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YNFtcgr6bv0dNZv6Gif/Wp16LaT6JZSbrRtyjC3K2qNLm5BNqSTRWvG9cj5N0Ux+ZTZzKkUgNYWiGvtwVsi+tA==", "contact"=>{"name"=>"Serg", "email"=>"speedopdavinci@gmail.com", "message"=>"test 2", "nickname"=>""}, "commit"=>"Send message"}
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@speed_op/gems/mail_form-1.5.1/lib/mail_form/views/mail_form/contact.erb (0.7ms)
+
+MailForm::Notifier#contact: processed outbound mail in 31.2ms
+
+Sent mail to noreply@example.com (30011.4ms)
+Date: Fri, 27 Nov 2015 22:10:20 -0700
+From: Serg <speedopdavinci@gmail.com>
+To: noreply@example.com
+Message-ID: <5659373c3a5b0_7f493fd1181b7014542d3@Violettas-MacBook-Pro.local.mail>
+Subject: My Contact Form
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+X-SMTPAPI: {"to":[ "speedopdavinci@gmail.com" ]}
+
+<h4 style="text-decoration:underline">My Contact Form</h4>
+
+
+  <p><b>Name:</b>
+  Serg</p>
+
+  <p><b>Email:</b>
+  speedopdavinci@gmail.com</p>
+
+  <p><b>Message:</b>
+  test 2</p>
+
+
+  Rendered contacts/create.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 30201ms (Views: 155.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for ::1 at 2015-11-27 22:12:46 -0700
+Processing by ContactsController#new as HTML
+  Rendered contacts/new.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 135ms (Views: 134.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2015-11-27 22:12:53 -0700
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K+vL4m/5vfwwVZketMN+kBAj6npzVzgsmiplYf6lQLAAoTbdzCcCW9zdcNrjNc206G+09MxSmTKVK+ydhackpw==", "contact"=>{"name"=>"Serg", "email"=>"speedopdavinci@gmail.com", "message"=>"jhebfjehc", "nickname"=>""}, "commit"=>"Send message"}
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@speed_op/gems/mail_form-1.5.1/lib/mail_form/views/mail_form/contact.erb (0.5ms)
+
+MailForm::Notifier#contact: processed outbound mail in 29.0ms
+
+Sent mail to noreply@example.com (30005.6ms)
+Date: Fri, 27 Nov 2015 22:12:53 -0700
+From: Serg <speedopdavinci@gmail.com>
+To: noreply@example.com
+Message-ID: <565937d582106_7f493fd11858d9cc543e5@Violettas-MacBook-Pro.local.mail>
+Subject: My Contact Form
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+X-SMTPAPI: {"to":[ "speedopdavinci@gmail.com" ]}
+
+<h4 style="text-decoration:underline">My Contact Form</h4>
+
+
+  <p><b>Name:</b>
+  Serg</p>
+
+  <p><b>Email:</b>
+  speedopdavinci@gmail.com</p>
+
+  <p><b>Message:</b>
+  jhebfjehc</p>
+
+
+  Rendered contacts/create.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 30154ms (Views: 117.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2015-11-27 22:13:23 -0700
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K+vL4m/5vfwwVZketMN+kBAj6npzVzgsmiplYf6lQLAAoTbdzCcCW9zdcNrjNc206G+09MxSmTKVK+ydhackpw==", "contact"=>{"name"=>"Serg", "email"=>"speedopdavinci@gmail.com", "message"=>"jhebfjehc", "nickname"=>""}, "commit"=>"Send message"}
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@speed_op/gems/mail_form-1.5.1/lib/mail_form/views/mail_form/contact.erb (0.6ms)
+
+MailForm::Notifier#contact: processed outbound mail in 41.3ms
+
+Sent mail to noreply@example.com (30007.1ms)
+Date: Fri, 27 Nov 2015 22:13:23 -0700
+From: Serg <speedopdavinci@gmail.com>
+To: noreply@example.com
+Message-ID: <565937f3ac72d_7f493fd1193be370544a4@Violettas-MacBook-Pro.local.mail>
+Subject: My Contact Form
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+X-SMTPAPI: {"to":[ "speedopdavinci@gmail.com" ]}
+
+<h4 style="text-decoration:underline">My Contact Form</h4>
+
+
+  <p><b>Name:</b>
+  Serg</p>
+
+  <p><b>Email:</b>
+  speedopdavinci@gmail.com</p>
+
+  <p><b>Message:</b>
+  jhebfjehc</p>
+
+
+  Rendered contacts/create.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 30141ms (Views: 89.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for ::1 at 2015-11-27 22:15:43 -0700
+Processing by ContactsController#new as HTML
+  Rendered contacts/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 136ms (Views: 133.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2015-11-27 22:17:14 -0700
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3W73fpR/xk7XiqvnKVYf1DTfRxjL3gMj/mZA1bSv6lf2JApBN6F56TsCQiN+oKzwzJMZlnTboj3xZ8kpz62OQA==", "contact"=>{"name"=>"Serg", "email"=>"speedopdavinci@gmail.com", "message"=>"jhvhgv", "nickname"=>""}, "commit"=>"Send message"}
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@speed_op/gems/mail_form-1.5.1/lib/mail_form/views/mail_form/contact.erb (0.9ms)
+
+MailForm::Notifier#contact: processed outbound mail in 28.5ms
+
+Sent mail to noreply@example.com (30009.1ms)
+Date: Fri, 27 Nov 2015 22:17:14 -0700
+From: Serg <speedopdavinci@gmail.com>
+To: noreply@example.com
+Message-ID: <565938da8a58b_7f493fd119945758545c1@Violettas-MacBook-Pro.local.mail>
+Subject: My Contact Form
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+X-SMTPAPI: {"to":[ "speedopdavinci@gmail.com" ]}
+
+<h4 style="text-decoration:underline">My Contact Form</h4>
+
+
+  <p><b>Name:</b>
+  Serg</p>
+
+  <p><b>Email:</b>
+  speedopdavinci@gmail.com</p>
+
+  <p><b>Message:</b>
+  jhvhgv</p>
+
+
+  Rendered contacts/create.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 30183ms (Views: 140.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for ::1 at 2015-11-27 22:17:56 -0700
+Processing by ContactsController#new as HTML
+  Rendered contacts/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 106ms (Views: 106.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2015-11-27 22:21:26 -0700
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BWFEVxBYQ/JNI5r5cBZxBwBavFGgT5XmGovUCcDMzBAuK7los4b8VaGrcz0n4MIj+Bbi3x9KNPgVil31u86oBw==", "contact"=>{"name"=>"Serg", "email"=>"speedopdavinci@gmail.com", "message"=>"efewfwe", "nickname"=>""}, "commit"=>"Send message"}
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@speed_op/gems/mail_form-1.5.1/lib/mail_form/views/mail_form/contact.erb (0.7ms)
+
+MailForm::Notifier#contact: processed outbound mail in 27.5ms
+
+Sent mail to noreply@example.com (30009.2ms)
+Date: Fri, 27 Nov 2015 22:21:26 -0700
+From: Serg <speedopdavinci@gmail.com>
+To: noreply@example.com
+Message-ID: <565939d6c4beb_7f493fd11842821c54666@Violettas-MacBook-Pro.local.mail>
+Subject: My Contact Form
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+X-SMTPAPI: {"to":[ "speedopdavinci@gmail.com" ]}
+
+<h4 style="text-decoration:underline">My Contact Form</h4>
+
+
+  <p><b>Name:</b>
+  Serg</p>
+
+  <p><b>Email:</b>
+  speedopdavinci@gmail.com</p>
+
+  <p><b>Message:</b>
+  efewfwe</p>
+
+
+  Rendered contacts/create.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 30152ms (Views: 110.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for ::1 at 2015-11-27 22:30:22 -0700
+Processing by ContactsController#new as HTML
+  Rendered contacts/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 157ms (Views: 156.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2015-11-27 22:30:28 -0700
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"duPRXeKGzOAbhiYs77vPLYDym0I3yT4QtLI5ZVPE3RFdqSxiQVhzR/cOz+i4TXwJeL7FzIjMnw67s7CZKMa5Bg==", "contact"=>{"name"=>"Serg", "email"=>"speedopdavinci@gmail.com", "message"=>"fresfr", "nickname"=>""}, "commit"=>"Send message"}
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@speed_op/gems/mail_form-1.5.1/lib/mail_form/views/mail_form/contact.erb (0.7ms)
+
+MailForm::Notifier#contact: processed outbound mail in 36.7ms
+
+Sent mail to noreply@example.com (30008.9ms)
+Date: Fri, 27 Nov 2015 22:30:28 -0700
+From: Serg <speedopdavinci@gmail.com>
+To: noreply@example.com
+Message-ID: <56593bf424384_7f493fd11869cd0454760@Violettas-MacBook-Pro.local.mail>
+Subject: My Contact Form
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+X-SMTPAPI: {"to":[ "speedopdavinci@gmail.com" ]}
+
+<h4 style="text-decoration:underline">My Contact Form</h4>
+
+
+  <p><b>Name:</b>
+  Serg</p>
+
+  <p><b>Email:</b>
+  speedopdavinci@gmail.com</p>
+
+  <p><b>Message:</b>
+  fresfr</p>
+
+
+  Rendered contacts/create.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 30214ms (Views: 165.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2015-11-27 22:30:58 -0700
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"duPRXeKGzOAbhiYs77vPLYDym0I3yT4QtLI5ZVPE3RFdqSxiQVhzR/cOz+i4TXwJeL7FzIjMnw67s7CZKMa5Bg==", "contact"=>{"name"=>"Serg", "email"=>"speedopdavinci@gmail.com", "message"=>"fresfr", "nickname"=>""}, "commit"=>"Send message"}
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@speed_op/gems/mail_form-1.5.1/lib/mail_form/views/mail_form/contact.erb (1.5ms)
+
+MailForm::Notifier#contact: processed outbound mail in 38.6ms
+
+Sent mail to noreply@example.com (30007.0ms)
+Date: Fri, 27 Nov 2015 22:30:58 -0700
+From: Serg <speedopdavinci@gmail.com>
+To: noreply@example.com
+Message-ID: <56593c125af7e_7f493fd11916419c548b3@Violettas-MacBook-Pro.local.mail>
+Subject: My Contact Form
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+X-SMTPAPI: {"to":[ "speedopdavinci@gmail.com" ]}
+
+<h4 style="text-decoration:underline">My Contact Form</h4>
+
+
+  <p><b>Name:</b>
+  Serg</p>
+
+  <p><b>Email:</b>
+  speedopdavinci@gmail.com</p>
+
+  <p><b>Message:</b>
+  fresfr</p>
+
+
+  Rendered contacts/create.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 30153ms (Views: 103.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2015-11-27 22:31:28 -0700
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"duPRXeKGzOAbhiYs77vPLYDym0I3yT4QtLI5ZVPE3RFdqSxiQVhzR/cOz+i4TXwJeL7FzIjMnw67s7CZKMa5Bg==", "contact"=>{"name"=>"Serg", "email"=>"speedopdavinci@gmail.com", "message"=>"fresfr", "nickname"=>""}, "commit"=>"Send message"}
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@speed_op/gems/mail_form-1.5.1/lib/mail_form/views/mail_form/contact.erb (0.4ms)
+
+MailForm::Notifier#contact: processed outbound mail in 27.9ms
+
+Sent mail to noreply@example.com (30007.5ms)
+Date: Fri, 27 Nov 2015 22:31:28 -0700
+From: Serg <speedopdavinci@gmail.com>
+To: noreply@example.com
+Message-ID: <56593c307e137_7f493fd1190f387054919@Violettas-MacBook-Pro.local.mail>
+Subject: My Contact Form
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+X-SMTPAPI: {"to":[ "speedopdavinci@gmail.com" ]}
+
+<h4 style="text-decoration:underline">My Contact Form</h4>
+
+
+  <p><b>Name:</b>
+  Serg</p>
+
+  <p><b>Email:</b>
+  speedopdavinci@gmail.com</p>
+
+  <p><b>Message:</b>
+  fresfr</p>
+
+
+  Rendered contacts/create.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 30150ms (Views: 112.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for ::1 at 2015-11-27 22:53:17 -0700
+Processing by ContactsController#new as HTML
+  Rendered contacts/new.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 185ms (Views: 183.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user_mailer" for ::1 at 2015-11-27 22:53:26 -0700
+
+ActionController::RoutingError (No route matches [GET] "/user_mailer"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/viola_lv/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/viola_lv/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/viola_lv/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.9ms)
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (100.2ms)
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@speed_op/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@speed_op/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@speed_op/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@speed_op/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@speed_op/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (47.4ms)
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@speed_op/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@speed_op/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@speed_op/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (110.7ms)
+
+
+Started GET "/users" for ::1 at 2015-11-27 22:53:55 -0700
+
+ActionController::RoutingError (No route matches [GET] "/users"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/viola_lv/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/viola_lv/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/viola_lv/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (78.6ms)
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@speed_op/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@speed_op/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@speed_op/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@speed_op/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@speed_op/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (40.1ms)
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@speed_op/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@speed_op/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@speed_op/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (89.1ms)
+
+
+Started GET "/users/signup" for ::1 at 2015-11-27 22:54:54 -0700
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (10.6ms)
+  Rendered users/new.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 171ms (Views: 154.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/contacts" for ::1 at 2015-11-27 22:55:04 -0700
+Processing by ContactsController#new as HTML
+  Rendered contacts/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 88ms (Views: 87.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2015-11-27 22:58:18 -0700
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wj6jVOv98Xvp1qd1kQ+ZN7VdsKPTZeVjNhOzGIxNVmrpdF5rSCNO3AVeTrHG+SoTTRHuLWxgRH05Ejrk908yfQ==", "contact"=>{"name"=>"Serg", "email"=>"speedopdavinci@gmail.com", "message"=>"dewdde", "nickname"=>""}, "commit"=>"Send message"}
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@speed_op/gems/mail_form-1.5.1/lib/mail_form/views/mail_form/contact.erb (0.6ms)
+
+MailForm::Notifier#contact: processed outbound mail in 29.1ms
+
+Sent mail to noreply@example.com (30009.7ms)
+Date: Fri, 27 Nov 2015 22:58:18 -0700
+From: Serg <speedopdavinci@gmail.com>
+To: noreply@example.com
+Message-ID: <5659427adb035_7f493fd11987a184550fd@Violettas-MacBook-Pro.local.mail>
+Subject: My Contact Form
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+X-SMTPAPI: {"to":[ "speedopdavinci@gmail.com" ]}
+
+<h4 style="text-decoration:underline">My Contact Form</h4>
+
+
+  <p><b>Name:</b>
+  Serg</p>
+
+  <p><b>Email:</b>
+  speedopdavinci@gmail.com</p>
+
+  <p><b>Message:</b>
+  dewdde</p>
+
+
+  Rendered contacts/create.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 30187ms (Views: 145.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2015-11-27 22:58:59 -0700
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 115ms (Views: 114.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2015-11-27 22:59:01 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wWtnx2wOslHKLbLcEcxFvGZ2bZ5UM1wgUC6R9JEtfUnqIZr4z9AN9ialWxhGOvaYnjozEOs2/T5fLxgI6i8ZXg==", "email"=>"ted@smith.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "ted@smith.com"]]
+  Rendered sessions/login.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 144ms (Views: 125.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/login" for ::1 at 2015-11-27 22:59:12 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yNlNFDGcjk3iY9Mmuk/Dh8Xo5BHXigtqRJLu0sIIfcbjk7ArkkIx6g7rOuLtuXCjPaS6n2iPqnRLk2cuuQoZ0Q==", "email"=>"ted@smith.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "ted@smith.com"]]
+  Rendered sessions/login.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 95ms (Views: 94.0ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/login" for ::1 at 2015-11-27 22:59:22 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MrN21ZgU0PSDAtucHnCS7hUwSunjLflN8/jwbYaAEN4Z+YvqO8pvU2+KMlhJhiHK7XwUZ1woWFP8+XmR/YJ0yQ==", "email"=>"red@smith.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "red@smith.com"]]
+  Rendered sessions/login.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 134ms (Views: 132.6ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/login" for ::1 at 2015-11-27 22:59:28 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Aylx0Fx+0J8BPDoRvKCL1iHhBBAOrjU8CtxwAT+Xb90oY4zv/6BvOO2009XrVjjy2a1anrGrlCIF3fn9RJULyg==", "email"=>"sergeyskumatov@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "sergeyskumatov@gmail.com"]]
+  Rendered sessions/login.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 103ms (Views: 102.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/login" for ::1 at 2015-11-27 22:59:38 -0700
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 109ms (Views: 108.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/signup" for ::1 at 2015-11-27 22:59:39 -0700
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (2.3ms)
+  Rendered users/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 105ms (Views: 104.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-11-27 23:00:02 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IHApbNIi4/9iHa+GHgxuP/sEvvMwsKoceiRAf3iyiHELOtRTcfxcWI6VRkJJ+t0bA0jgfY+1CwJ1JcmDA7DsZg==", "user"=>{"first_name"=>"Sergey", "last_name"=>"Skumatov", "email"=>"sergeyskumatov@aol.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Signup"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'sergeyskumatov@aol.com' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Sergey"], ["last_name", "Skumatov"], ["email", "sergeyskumatov@aol.com"], ["password_digest", "$2a$10$18yYukQe4QDe1v1aWk2fLuUhj3qVrB98HCu6WNQTwg/epeqsLSTDO"], ["created_at", "2015-11-28 06:00:03.158185"], ["updated_at", "2015-11-28 06:00:03.158185"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 169ms (ActiveRecord: 1.5ms)
+
+NameError (undefined local variable or method `user' for #<UsersController:0x007fa234557890>):
+  app/controllers/users_controller.rb:11:in `create'
+
+
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.8ms)
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (117.7ms)
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@speed_op/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@speed_op/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@speed_op/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@speed_op/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@speed_op/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (102.5ms)
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@speed_op/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@speed_op/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@speed_op/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (183.3ms)
+
+
+Started POST "/users" for ::1 at 2015-11-28 10:02:58 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IHApbNIi4/9iHa+GHgxuP/sEvvMwsKoceiRAf3iyiHELOtRTcfxcWI6VRkJJ+t0bA0jgfY+1CwJ1JcmDA7DsZg==", "user"=>{"first_name"=>"Swen", "last_name"=>"Skumatov", "email"=>"swen@aol.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Signup"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'swen@aol.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Swen"], ["last_name", "Skumatov"], ["email", "swen@aol.com"], ["password_digest", "$2a$10$o7ASaS0dRL5Msyh/za7VxeNnxS0uRalTxf2VEPlMBmD2SoYzyREhW"], ["created_at", "2015-11-28 17:02:58.552611"], ["updated_at", "2015-11-28 17:02:58.552611"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 86ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/" for ::1 at 2015-11-28 10:02:58 -0700
+Processing by SitesController#index as HTML
+  [1m[35mSite Load (0.8ms)[0m  SELECT "sites".* FROM "sites"
+  Rendered sites/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 158ms (Views: 154.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/contacts" for ::1 at 2015-11-28 10:03:23 -0700
+Processing by ContactsController#new as HTML
+  Rendered contacts/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 121ms (Views: 118.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2015-11-28 10:03:30 -0700
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"j+xC0eR/txNj2Sp3wxLcnmDWEC29BVsBKt0zUFdXL9mkpr/uR6EItI9Rw7OU5G+6mJpOowIA+h8l3LqsLFVLzg==", "contact"=>{"name"=>"Serg", "email"=>"speedopdavinci@gmail.com", "message"=>"trgtgt", "nickname"=>""}, "commit"=>"Send message"}
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@speed_op/gems/mail_form-1.5.1/lib/mail_form/views/mail_form/contact.erb (0.5ms)
+
+MailForm::Notifier#contact: processed outbound mail in 28.0ms
+
+Sent mail to noreply@example.com (30006.4ms)
+Date: Sat, 28 Nov 2015 10:03:30 -0700
+From: Serg <speedopdavinci@gmail.com>
+To: noreply@example.com
+Message-ID: <5659de62b8e01_7f493fd119866350551d3@Violettas-MacBook-Pro.local.mail>
+Subject: My Contact Form
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+X-SMTPAPI: {"to":[ "speedopdavinci@gmail.com" ]}
+
+<h4 style="text-decoration:underline">My Contact Form</h4>
+
+
+  <p><b>Name:</b>
+  Serg</p>
+
+  <p><b>Email:</b>
+  speedopdavinci@gmail.com</p>
+
+  <p><b>Message:</b>
+  trgtgt</p>
+
+
+  Rendered contacts/create.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 30256ms (Views: 218.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2015-11-28 10:04:00 -0700
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"j+xC0eR/txNj2Sp3wxLcnmDWEC29BVsBKt0zUFdXL9mkpr/uR6EItI9Rw7OU5G+6mJpOowIA+h8l3LqsLFVLzg==", "contact"=>{"name"=>"Serg", "email"=>"speedopdavinci@gmail.com", "message"=>"trgtgt", "nickname"=>""}, "commit"=>"Send message"}
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@speed_op/gems/mail_form-1.5.1/lib/mail_form/views/mail_form/contact.erb (0.6ms)
+
+MailForm::Notifier#contact: processed outbound mail in 49.4ms
+
+Sent mail to noreply@example.com (30011.3ms)
+Date: Sat, 28 Nov 2015 10:04:01 -0700
+From: Serg <speedopdavinci@gmail.com>
+To: noreply@example.com
+Message-ID: <5659de81a5c9_7f493fd1181b6a385527f@Violettas-MacBook-Pro.local.mail>
+Subject: My Contact Form
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+X-SMTPAPI: {"to":[ "speedopdavinci@gmail.com" ]}
+
+<h4 style="text-decoration:underline">My Contact Form</h4>
+
+
+  <p><b>Name:</b>
+  Serg</p>
+
+  <p><b>Email:</b>
+  speedopdavinci@gmail.com</p>
+
+  <p><b>Message:</b>
+  trgtgt</p>
+
+
+  Rendered contacts/create.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 30182ms (Views: 118.3ms | ActiveRecord: 0.0ms)
