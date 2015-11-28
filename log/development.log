@@ -2476,3 +2476,127 @@ Processing by SitesController#index as HTML
   [1m[36mSite Load (0.6ms)[0m  [1mSELECT "sites".* FROM "sites"[0m
   Rendered sites/index.html.erb within layouts/application (3.9ms)
 Completed 200 OK in 205ms (Views: 203.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/contacts" for ::1 at 2015-11-27 17:40:08 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ContactsController#new as HTML
+  Rendered contacts/new.html.erb within layouts/application (354.5ms)
+Completed 200 OK in 823ms (Views: 814.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2015-11-27 17:41:03 -0700
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WmZzjXm9eHCI8FXr/vlMLtll66/EP+4skRdIQ6Ie4lBxLI6y2mPH12R4vC+pD/8KISm1IXs6TzKeFsG/2RyGRw==", "contact"=>{"name"=>"Serg", "email"=>"speedopdavinci@gmail.com", "message"=>"Test message", "nickname"=>""}, "commit"=>"Send message"}
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@speed_op/gems/mail_form-1.5.1/lib/mail_form/views/mail_form/contact.erb (2.0ms)
+
+MailForm::Notifier#contact: processed outbound mail in 176.1ms
+
+Sent mail to your_email@example.org (11.8ms)
+Date: Fri, 27 Nov 2015 17:41:03 -0700
+From: Serg <speedopdavinci@gmail.com>
+To: your_email@example.org
+Message-ID: <5658f81f766e2_6e863fce48e7f5bc76217@Violettas-MacBook-Pro.local.mail>
+Subject: My Contact Form
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<h4 style="text-decoration:underline">My Contact Form</h4>
+
+
+  <p><b>Name:</b>
+  Serg</p>
+
+  <p><b>Email:</b>
+  speedopdavinci@gmail.com</p>
+
+  <p><b>Message:</b>
+  Test message</p>
+
+
+  Rendered contacts/create.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 379ms (Views: 138.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2015-11-27 17:52:31 -0700
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WmZzjXm9eHCI8FXr/vlMLtll66/EP+4skRdIQ6Ie4lBxLI6y2mPH12R4vC+pD/8KISm1IXs6TzKeFsG/2RyGRw==", "contact"=>{"name"=>"Serg", "email"=>"speedopdavinci@gmail.com", "message"=>"Test message", "nickname"=>""}, "commit"=>"Send message"}
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@speed_op/gems/mail_form-1.5.1/lib/mail_form/views/mail_form/contact.erb (0.5ms)
+
+MailForm::Notifier#contact: processed outbound mail in 29.1ms
+
+Sent mail to your_email@example.org (3.5ms)
+Date: Fri, 27 Nov 2015 17:52:31 -0700
+From: Serg <speedopdavinci@gmail.com>
+To: your_email@example.org
+Message-ID: <5658facfcf2e7_6e863fce49ee8afc76350@Violettas-MacBook-Pro.local.mail>
+Subject: My Contact Form
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<h4 style="text-decoration:underline">My Contact Form</h4>
+
+
+  <p><b>Name:</b>
+  Serg</p>
+
+  <p><b>Email:</b>
+  speedopdavinci@gmail.com</p>
+
+  <p><b>Message:</b>
+  Test message</p>
+
+
+  Rendered contacts/create.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 210ms (Views: 174.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for ::1 at 2015-11-27 17:52:35 -0700
+Processing by ContactsController#new as HTML
+  Rendered contacts/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 96ms (Views: 95.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2015-11-27 17:56:11 -0700
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XDOQ3TFXn0SBgUBEc6eF9tELegeQv7mSlEUHTLD4Ajl3eW3ikokg420JqYAkUTbSKUckiS+6GIybRI6wy/pmLg==", "contact"=>{"name"=>"Serg", "email"=>"speedopdavinci@gmail.com", "message"=>"Test ", "nickname"=>""}, "commit"=>"Send message"}
+  Rendered /Users/viola_lv/.rvm/gems/ruby-2.2.3@speed_op/gems/mail_form-1.5.1/lib/mail_form/views/mail_form/contact.erb (0.7ms)
+
+MailForm::Notifier#contact: processed outbound mail in 27.8ms
+
+Sent mail to speedopdavinci@gmail.com (3.2ms)
+Date: Fri, 27 Nov 2015 17:56:11 -0700
+From: Serg <speedopdavinci@gmail.com>
+To: speedopdavinci@gmail.com
+Message-ID: <5658fbab47fa6_6e863fce4843c758764df@Violettas-MacBook-Pro.local.mail>
+Subject: My Contact Form
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<h4 style="text-decoration:underline">My Contact Form</h4>
+
+
+  <p><b>Name:</b>
+  Serg</p>
+
+  <p><b>Email:</b>
+  speedopdavinci@gmail.com</p>
+
+  <p><b>Message:</b>
+  Test </p>
+
+
+  Rendered contacts/create.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 141ms (Views: 105.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for ::1 at 2015-11-27 17:57:41 -0700
+Processing by ContactsController#new as HTML
+  Rendered contacts/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 111ms (Views: 111.2ms | ActiveRecord: 0.0ms)
