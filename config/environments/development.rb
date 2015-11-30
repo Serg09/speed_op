@@ -27,8 +27,10 @@ Rails.application.configure do
     domain: "heroku.com",
     authentication: "plain",
     enable_starttls_auto: true,
-    user_name: ENV["SENDGRID_USERNAME"],
-    password: ENV["SENDGRID_PASSWORD"],
+    # user_name: ENV["SENDGRID_USERNAME"],
+    user_name: "Serg09",
+    # password: ENV["SENDGRID_PASSWORD"],
+    password: "Speedop_2015",
     # openssl_verify_mode: 'none'
   }
 
