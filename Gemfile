@@ -38,6 +38,8 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem 'mail_form'
 gem 'simple_form'
+
+gem "figaro"
 # Use Unicorn as the app server
 # gem 'unicorn'
 
