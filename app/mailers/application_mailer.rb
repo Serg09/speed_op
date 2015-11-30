@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: "no-reply@sendgrid.com"
+  default from: "no-reply@gmail.com"
   layout 'mailer'
 end

@@ -1,5 +1,5 @@
 class ContactMailer < ActionMailer::Base
-  default from: "no-reply@sendgrid.com"
+  default from: "no-reply@gmail.com"
 
   def welcome_email(contact)
     @contact = contact
