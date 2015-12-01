@@ -5,7 +5,7 @@ class ContactMailer < ActionMailer::Base
     @contact = contact
     # @url = 'http://www.google.com'
     attachments['Speed OP.docx'] = File.read('app/assets/files/Speed OP.docx')
-    mail(to: @contact.email, bcc: 'speedopdavinci@gmail.com', subject: 'test welcome email', reply_to: 'no-reply@example.com')
+    mail(to: @contact.email, bcc: 'speedopdavinci@gmail.com', subject: 'test welcome email', reply_to: 'no-reply@gmail.com')
 
     # format.html { render html: 'welcome_email'}
     # format.text { render text: 'Get a real mail client!'}
