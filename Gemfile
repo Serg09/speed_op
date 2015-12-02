@@ -40,6 +40,8 @@ gem 'mail_form'
 gem 'simple_form'
 
 gem "figaro"
+
+gem 'whenever', :require => false
 # Use Unicorn as the app server
 # gem 'unicorn'
 
