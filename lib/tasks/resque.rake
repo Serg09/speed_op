@@ -11,3 +11,4 @@ namespace :resque do
 
   end
 end
+
