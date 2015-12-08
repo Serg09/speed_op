@@ -8,3 +8,5 @@ every 1.minutes do # Many shortcuts available: :hour, :day, :month, :year, :rebo
 
   # rake 'send_digest_email', :output => {:error => 'log/error.log', :standard => 'log/cron.log'}
 end
+
+
