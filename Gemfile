@@ -31,7 +31,6 @@ require 'rubygems'
 
 group :production do
   gem 'rails_12factor'
-  gem 'pg'
 end
 
 # Use SCSS for stylesheets
@@ -75,8 +74,6 @@ group :development, :test do
   gem 'launchy'
   gem 'thin'
   gem 'dotenv-rails'
-
-  gem "sqlite3"
 end
 
 group :development do
