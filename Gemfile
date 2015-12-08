@@ -77,7 +77,7 @@ group :development, :test do
   gem 'thin'
   gem 'dotenv-rails'
 
-  gem "sqlite3-ruby"
+  gem "sqlite3"
 end
 
 group :development do
