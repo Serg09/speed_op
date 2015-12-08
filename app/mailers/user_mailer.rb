@@ -1,6 +1,6 @@
 class UserMailer < ActionMailer::Base
   # include Resque::Mailer
-  # default from: 'info@speedop.com'
+  default from: 'info@speedop.com'
 
   def digest_email_update(user)
     @user = user
