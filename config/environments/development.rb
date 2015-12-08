@@ -19,7 +19,7 @@ Rails.application.configure do
   # config.action_mailer.smtp_settings = { :address => "localhost", :port => 1025 }
   config.action_mailer.perform_deliveries = true
   config.action_mailer.default :charset => "utf-8"
-  config.action_mailer.default_options = {from: 'speedopdavinci@gmail.com'}
+  # config.action_mailer.default_options = {from: 'info@speedop.com'}
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
