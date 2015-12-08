@@ -74,6 +74,7 @@ group :development, :test do
   gem 'launchy'
   gem 'thin'
   gem 'dotenv-rails'
+  gem 'sqlite3'
 end
 
 group :development do
