@@ -17,7 +17,7 @@ gem 'lunchy'
 gem 'resque', '~> 1.25', '>= 1.25.2', require: 'resque/server'
 gem 'resque-scheduler', '~> 4.0', :require => 'resque/scheduler/server'
 gem 'resque_mailer'
-gem 'mailcatcher'
+# gem 'mailcatcher'
 
 
 gem 'mail_form'
@@ -62,7 +62,6 @@ gem "figaro"
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'rspec-rails'
   gem 'guard-rspec', require: false
