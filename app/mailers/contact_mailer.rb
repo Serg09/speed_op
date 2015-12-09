@@ -1,5 +1,5 @@
 class ContactMailer < ActionMailer::Base
-  default from: "info@speedop.com"
+  default from: 'speedopdavinci@gmail.com'
 
   def welcome_email(contact)
     @contact = contact

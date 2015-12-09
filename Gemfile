@@ -23,6 +23,7 @@ gem 'mailcatcher'
 gem 'mail_form'
 gem 'simple_form'
 gem 'whenever', :require => false
+gem 'roo', '~> 2.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
